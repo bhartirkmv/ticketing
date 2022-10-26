@@ -1,0 +1,11 @@
+// Here we will be making a fake copy of stripe. 
+// This will run only when we run our code in the test environment
+
+export const stripe = {
+  charges: {
+    // mockResolvedValue makes sure that anytime we call the create
+    // function , we are going to get back a promise that automatically 
+    // resolves itself with an empty object.
+    create: jest.fn().mockResolvedValue({})
+  }
+}
