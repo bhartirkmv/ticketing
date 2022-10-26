@@ -15,6 +15,7 @@ const start = async () => {
   // The reason for checking this here is : If we implement this in our route handler,
   // Then we will get to know about the error much later, only when we 
   // Try to access that route handler after deployment.
+  console.log('Starting ....');
   if(!process.env.JWT_KEY){
     throw new Error('JWT_KEY must be defined');
   }
