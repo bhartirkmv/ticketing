@@ -6,7 +6,8 @@ const buildClient = ( { req } ) => {
     // When a request is coming from the server, It is pretty much sure that 
     // The browser window corresponding that will be undefined.
     return axios.create({
-      baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      //baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      baseURL: 'http://kheloindia.club',
       headers: req.headers,
     });
   } else {

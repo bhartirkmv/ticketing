@@ -32,7 +32,8 @@ app.use(json());
 app.use(
   cookieSession({
     signed: false,
-    secure: process.env.NODE_ENV !== 'test'
+    secure: false,
+    //secure: process.env.NODE_ENV !== 'test'
   })
 );
 // cookie-session has to run first so that it can take a look at the cookie and 
