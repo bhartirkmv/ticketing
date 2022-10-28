@@ -1,6 +1,7 @@
 
 import Link from 'next/link';
 // We need the Link component of Next JS to use it with anchor tag
+//....
 
 const LandingPage = ({ currentUser, tickets }) => {
   // We are creating a helper variable to make sure the big block of jsx easier to read.
