@@ -7,7 +7,7 @@ metadata:
     nginx.ingress.kubernetes.io/use-regex: 'true'
 spec:
   rules:
-    - host: kheloindia.club
+    - host: www.kheloindia.club
       http:
         paths:
 
