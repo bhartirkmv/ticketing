@@ -13,6 +13,7 @@ const router = express.Router();
 // We run all the middleware in sequence, one after the other. That 
 // is why we put in the next option to indicate that next middleware 
 // should be running once this middleware is completed. 
+console.log('Starting signin..');
 
 router.post('/api/users/signin',
 [
